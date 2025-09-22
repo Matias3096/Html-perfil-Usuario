@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de usuario y contacto del Taller de Reparaciones Tecnológicas - UTN FRM. Proyecto de la cátedra de Desarrollo de Software.">
+    <title>Perfil de Usuario - Taller de Reparaciones UTN FRM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            PERFIL DE USUARIO
+        </h1>
+        <p>Taller de Reparaciones Tecnológicas - UTN FRM</p>
+    </header>
+
+    <main>
+        <img src="https://i.ibb.co/C07Bf5J/placeholder-profile.png" alt="Imagen de perfil de Matías" class="perfil-img">
+
+        <section id="biografia">
+            <article>
+                <h2>Acerca de mí</h2>
+                <p>
+                    Mi nombre es Matías, soy estudiante de la UTN FRM, y me dedico a la reparación de dispositivos electrónicos. Con el objetivo de aplicar los conocimientos adquiridos en la cátedra de Desarrollo de Software, creé este sitio para ofrecer mis servicios y la venta de repuestos.
+                </p>
+            </article>
+        </section>
+
+        <section id="detalles-contacto">
+            <h2>Detalles de Contacto</h2>
+            <table>
+                <caption>Información de contacto</caption>
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>matias.perez@example.com</td>
+                        <td>+54 9 11 1234 5678</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="actualizar-perfil">
+            <h2>Actualizar Perfil</h2>
+            <p>Completa este formulario para mantener tus datos actualizados.</p>
+            <form action="/actualizar-perfil" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Ej: juan.perez@email.com">
+
+                <label for="biografia">Biografía:</label>
+                <textarea id="biografia" name="biografia" rows="5" placeholder="Cuentanos algo sobre ti."></textarea>
+                
+                <button type="submit">Actualizar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Taller de Reparaciones - UTN FRM. Todos los derechos reservados.</p>
+        <p>Proyecto de Cátedra - <a href="https://www.frm.utn.edu.ar/">Facultad Regional Mendoza</a></p>
+    </footer>
+</body>
+</html>

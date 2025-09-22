@@ -1,46 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name = "description" content="Taller de Reparaciones - Servicios y venta de repuestos. Proyecto de la catedra de Desarrollo de Software UTN-FRM">
+    <title>Taller de Reparaciones - UTN FRM</title>
+    
 </head>
 <body>
-    <header>
-        <h1>
-            TALLER DE REPARACIONES
-        </h1>
+    <header role="banner">
+        <div class="container branding">
+            <a class="logo" href="/" > Taller de Reparaciones</a>
+            <nav aria-label="Menu Principal">
+                <ul>
+                    <li> <a href="/"> Inicio</a></li>
+                    <li> <a href="page/products.html">Productos </a></li>
+                    <li> <a href="pages/cart.html">Carrito</a></li>
+                    <li><a href="pages/register.html">Registro</a></li>
+                    <li><a href="pages/login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+            <a class="button" href="pages/contact.html" style="margin-left: auto;">Contacto</a>
+        </div>
     </header>
-    <main>
-        <article>
-            <form action="">
-                <input type="Nombre de Usuario" placeholder="Nombre de usuario">
+    <main role="main" class="container">
+        <!--Hero Presentacion-->
+        <section class="hero" aria-labelledby="hero-title">
+            <div>
+                <h1 id="hero-title">Taller de Reparaciones Tecnologicas - Matias (UTN-FRM)</h1>
+                <p class="muted"> Servicio tecnico de celulares y PC: diagnóstico, cambio de componentes y repuestos, etc</p>
+                <p>
+                    <a class="button" href="pages/products.html">Ver Productos</a>
+                    <a href="pages/register.html" style="margin-left: 0.75rem"> Crear cuenta</a>
+                </p>
+            </div>
 
-                <h2>
-                Mi nombre es matias, soy estudiante de la UTN FRM, me dedico a la reparacion de 
-            </h2>
-                
-            </form>
-            
-        </article>
-    </main>
-    <footer>
-        <section>
-    <h3>Actualizar Perfil</h3>
-    <form action="/actualizar-perfil" method="post">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre"><br><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br><br>
-        
-        <label for="biografia">Biografía:</label><br>
-        <textarea id="biografia" name="biografia" rows="4" cols="50"></textarea><br><br>
-        
-        <input type="submit" value="Guardar Cambios">
-    </form>
-</section>
+            <!--Tarjeta rapida con resumen /CTA-->
+            <aside class="card" aria-labelledby="cta-title">
+                <h2 id="cta-title">Servicio y Venta  </h2>
+                <p class="muted"> Presupuestos rapidos y seguimiento por número de orden. Entrega estimada 24hs-48hs</p>
+                <p> <a href="pages/contact.html"> Solicitar presupuesto </a></p>
+            </aside>
+        </section>
+            <!--Tarjeta productos destacados (ejemplo estatico)-->
+            <section class="card" aria-labelledby="productos-title">
+                <h2 id="productos-title">Productos destacados</h2>
+                <div class="cards" role="list">
+                    <article class="card" role="listitem">
+                        <img src="data:image/jpeg;base64,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" alt="Smartphone ejemplo" style="width:15% ;border-radius: 8px 8px 0 0;">
+                        <h3> Galaxy A32 - Pantalla Usada</h3>
+                        <p class="muted">Precio: 36000- Stock: 2</p>
+                        <p><a href="pages/detailProduct.html"> Ver detalle</a></p>
+                    </article>
 
+                    <article class="card" role="listitem">
+                        <h3>Bateria generica 3000mAh</h3>
+                        <p class="muted"> Precio: $18500 Stock: 5</p>
+                        <p><a href="pages/detailProduct.html"> Ver detalle</a></p>
+                    </article>
+                </div>
+            </section>
+            <!--Formulario de contacto -->
+            <section aria-labelledby="contacto-title" style="margin-top: 1.5rem">
+                <h2 id="contacto-title"> Contacto rapido</h2>
+                <form action="/enviar-presupuesto" method="post" class="card" autocomplete="on">
+                    <label for="nombre"> Nombre completo</label>
+                    <input id="nombre" name="nombre" type="text" required minlength="2" placeholder="Ingrese su nombre">
+
+                    <label for="email"> Email</label>
+                    <input id="email" name="email" type="email" required placeholder="tuEmail@ejemplo.com">
+                    
+                    <label for="telefono">Telefono</label>
+                    <input id="telefono" name="telefono" type="tel" placeholder="(opcional)">
+                    
+                    <label for="mensaje"> Mensaje / detalle</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Breve descripción del problema o pedido"></textarea> <!--Como ponerlo abajo??-->
+
+                    <p> <button type="submit" class="button"> Enviar</button></p>
+                </form>
+            </section>    
+        </main>
+    <footer role="contentinfo">
+        <div class="container">
+            <small>Proyecto para la catedra Desarrollo de Software - UTN-FRM. Repositorio y entregables subidos a GitHub como lo requiere la planificacion</small>
+            <nav aria-label="Enlaces pie de pagina">
+                <ul style="display: flex;gap: .75rem;margin: 0;padding: 0;list-style: none;">
+                    <li> <a href="/legal.html">Aviso legal</a></li>
+                    <li> <a href="/privacy.html"> Privacidad</a></li>
+                </ul>
+            </nav>
+        </div>
     </footer>
     <link rel="stylesheet" href="stile.css">
 </body>
